@@ -1,0 +1,220 @@
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --lightvoid: #29078f;
+    --purple: #7202f2;
+    --blue: #337894;
+    --red: #f23;
+    --lightred: #ffe0fb;
+    --lightblue: #dbe0ff;
+    --lightyellow: #fdfdcb;
+    --tomate: #ff6347;
+}
+
+/**navbar**/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.2em 1em 1.2em;
+    border-bottom: .3em solid var(--lightvoid);
+    font-weight: 700;
+}
+
+.nav img{
+    width: 15em;
+    height: 4.6em;
+}
+
+.nav__links-li{
+    list-style: none;
+
+}
+
+.nav__links-li a{
+    text-decoration: none;
+    margin: 1em 2em 0em 2em;
+    padding: .4em 1em;
+    border-radius: 5em;
+    color: var(--lightvoid);
+    font-size: 1.3em;
+    transition: 130ms all 130ms linear;
+}
+
+.nav__links-li a:first-child:hover{
+    color:#fff;
+    background: linear-gradient(to right, var(--red),var(--purple)80%);
+}
+
+.nav__links-li a:nth-child(2):hover{
+    color:#fff;
+    background: var(--purple);
+}
+
+.nav__links-li a:nth-child(3):hover{
+    color:#fff;
+    background: linear-gradient(to right,var(--purple),var(--blue)80%);
+}
+
+.button{
+    text-decoration: none;
+    padding: .5em .9em;
+    border-radius: 6em;
+    background: var(--blue);
+    color: #fff;
+    transition: 120ms all 120ms linear;
+}
+
+.button:hover{
+    background: #29f;
+}
+
+/**Gallery**/
+
+.Portafolio-div>h2{
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.Portafolio-3D{
+    margin: .8em 1.5em;
+}
+
+.Portafolio-3D>h4{
+    font-size: 1.5em;
+    margin: .6em .5em;
+    border-bottom: 2px solid var(--lightvoid);
+}
+
+.background-3d{
+    background:  linear-gradient(to bottom, var(--lightred),var(--lightblue));
+}
+
+.flex-impresion{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.4em 0em;
+}
+
+.flex-impresion>img{
+    width: 19em;
+    height: 19em;
+    margin: 2em 1em;
+    padding: 1em 1em;
+    box-shadow: 0em 1em 1em var(--tomate);
+    border-top: 1px solid #fff;
+}
+
+.Portafolio-Dg>h4{
+    font-size: 1.5em;
+    margin: .6em .5em;
+    border-bottom: 2px solid var(--lightvoid);
+}
+
+.titulo-Dg{
+    margin: 1.2em 1.5em;
+}
+
+.titulo-Dg>h5{
+    margin: .5em .3em;
+    font-size: 1.1em;
+}
+
+.Dg-img img{
+    width: 12em;
+    height: 12em; 
+    padding: 1em 1em;
+    margin: 1em 1em;
+    box-shadow: 0em 1em 1em var(--tomate);
+    border-top: 1px solid #fff;
+}
+
+.Dg-img-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, var(--lightred),var(--lightblue));
+    max-width:100%;
+    padding: 2.5em 1em;
+}
+
+.dg-background{
+    background: linear-gradient(to bottom, var(--lightred),var(--lightblue));
+    padding: 1.5em 0em;
+}
+
+.dg-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(13.7em,1fr));
+    grid-auto-rows: 13.4em;
+    grid-gap:2.3em 1em;
+}
+
+.dg-container>img{
+    width: 100%;
+	height: 100%;
+    object-fit: contain;
+}
+
+/**footer**/
+
+footer{
+    border-top: .3em solid var(--lightvoid);
+    background: linear-gradient(to bottom,#103,#000);
+    height: 12.5em;
+    padding: 2.3em 1em;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h5{
+    font-size: 1.3em;
+    color: #999;
+}
+
+.footer h6{
+    font-size: .8em;
+    color: #888;
+    margin: 1em 0em 0em 0em;
+}
+
+.footer-redes{
+    margin: 1.5em 0em;
+    list-style: none;
+}
+
+.footer-redes li a{
+    text-decoration: none;
+    color: #ffe2fd;
+    margin: 1.5em 1em;
+    transition: 120ms all 120ms linear;
+}
+
+.footer-redes li a:first-child:hover{
+    padding: .6em .6em;
+    background: #22f;
+}
+
+.footer-redes li a:nth-child(2):hover{
+    padding: .6em .6em;
+    background: #80f;
+}
+
+.footer-redes li a:nth-child(3):hover{
+    padding: .6em .6em;
+    background: #3eb66e;
+}
