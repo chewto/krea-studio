@@ -60,6 +60,11 @@
 
 .nav__links-li a:nth-child(3):hover{
     color:#fff;
+    background: var(--purple);
+}
+
+.nav__links-li a:nth-child(4):hover{
+    color:#fff;
     background: linear-gradient(to right,var(--purple),var(--blue)80%);
 }
 
