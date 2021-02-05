@@ -255,6 +255,7 @@
     background: linear-gradient(to bottom, var(--lightyellow),var(--lightblue));
     padding: 3.6em 1em;
     margin: 1em 1.2em;
+    flex-wrap: wrap;
 }
 
 .servicios__cards-art h3{
