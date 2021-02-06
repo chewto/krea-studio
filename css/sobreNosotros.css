@@ -85,7 +85,7 @@
 /**Sobre nosotros**/
 
 main{
-    margin: 1em 1em;
+    margin: 2.8em 1.5em;
 }
 
 .texto-rapido{
@@ -95,12 +95,12 @@ main{
 
 .texto-rapido>h3{
     padding: .6em 1em;
-   font-size: 1.5em;
+   font-size: 1.6em;
 }
 
 .texto-rapido>h4{
     padding: .6em 1em;
-   font-size: 1.2em;
+   font-size: 1.4em;
 }
 
 .texto-rapido>p{
