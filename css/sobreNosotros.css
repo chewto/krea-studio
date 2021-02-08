@@ -20,56 +20,62 @@
 
 /**navbar**/
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 1.2em 1em 1.2em;
-    border-bottom: .3em solid var(--lightvoid);
-    font-weight: 700;
+#sidebar {
+    position: fixed;
+    width: 19em;
+    height: 100%;
+    background: #fff;
+    left: -20em;
+    transition: all 500ms ease-in;
+    z-index: 100;
+    border-right: 1px solid var(--lightvoid);
 }
 
-.nav img{
-    width: 15em;
-    height: 4.6em;
+#sidebar.active{
+    left: 0;
 }
 
-.nav__links-li{
+#sidebar>ul{
+    margin: 1.2em 0;
+}
+
+#sidebar ul li{
+    color: rgba(230, 230, 230, .9);
+    text-align: center;
+    padding: 1.3em .8em;
     list-style: none;
-
+    border-bottom:1px solid rgba(100, 100, 100, .3);
 }
 
-.nav__links-li a{
+li>.links{
     text-decoration: none;
-    margin: 1em 2em 0em 2em;
-    padding: .4em 1em;
-    border-radius: 5em;
-    color: var(--lightvoid);
-    font-size: 1.3em;
-    transition: 130ms all 130ms linear;
 }
 
-.nav__links-li a:first-child:hover{
-    color:#fff;
-    background: linear-gradient(to right, var(--red),var(--purple)80%);
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 14em;
+    height: 5.5em;
 }
 
-.nav__links-li a:nth-child(2):hover{
-    color:#fff;
-    background: var(--purple);
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 20.6em;
+    top: 0.65em;
+    cursor: pointer;
 }
 
-.nav__links-li a:nth-child(3):hover{
-    color:#fff;
-    background: var(--purple);
-}
-
-.nav__links-li a:nth-child(4):hover{
-    color:#fff;
-    background: linear-gradient(to right,var(--purple),var(--blue)80%);
+#sidebar .toggle-btn span{
+    display: block;
+    width: 1.5em;
+    text-align: center;
+    font-size: 2em;
+    border: 1px solid #666;
+    color: #666;
 }
 
 .button{
+    margin: 6em 5.4em;
     text-decoration: none;
     padding: .5em .9em;
     border-radius: 6em;
@@ -85,17 +91,17 @@
 /**Sobre nosotros**/
 
 main{
-    margin: 2.8em 1.5em;
+    padding: 5em 2em 2.5em 2em;
 }
 
 .texto-rapido{
     background: radial-gradient(var(--lightred),var(--lightblue));
-    margin: 2em 0em;
+    padding: 2em 0;
 }
 
 .texto-rapido>h3{
     padding: .6em 1em;
-   font-size: 1.6em;
+   font-size: 1.8em;
 }
 
 .texto-rapido>h4{
@@ -104,8 +110,8 @@ main{
 }
 
 .texto-rapido>p{
-    padding: 1em 1em;
-    letter-spacing: 2px;
+    padding: 1.2em 1.2em;
+    letter-spacing: 2.4px;
 }
 
 /**footer**/

@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"content="impresion 3D , fotografia , programacion , desarrollo web , diseño grafico"> 
+    <meta name="description"content="empresa de diseño grafico , impresion 3D , fotografia y desarrollo web"> 
+    <meta name="author"content="Jesus Lozada"> 
+    <meta name="copyright"content="Krea Studio"> 
     <link rel="stylesheet" href="../css/portafolio.css">
     <link  rel="icon"   href="../img/icono.ico.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portafolio</title>
 </head>
 <body>
-    <nav class="nav">
-        <img src="../img/logo.png" alt="logo">
+    <nav id="sidebar">
+        <div class="toggle-btn">
+            <span>&#9776;</span>
+        </div>
         <ul>
-            <li class="nav__links-li">
-                <a href="index.html">Inicio</a>
-                <a href="productos.html">Productos</a>
-                <a href="portafolio.html">Portafolio</a>
-                <a href="sobreNostros.html">Sobre Nosostros</a>
+            <li>
+                <img src="../img/logo.png" alt="logo" class="logo">
             </li>
+            <li><a href="../index.html" class="links">Inicio</a></li>
+            <li><a href="productos.html" class="links">Productos</a></li>
+            <li><a href="portafolio.html" class="links">Portafolio</a></li>
+            <li><a href="sobreNostros.html" class="links">Sobre nosotros</a></li>
         </ul>
-        <a href="#contacto" class="button">Contactanos</a>
+    
+    <a href="#contacto" class="button">Contactanos</a>
     </nav>
+    
 
-<main>
-    <section class="Portafolio-3D">
+    <main>
+        <section class="Portafolio-3D">
         <h4>Impresion 3D</h4>
         <div class="background-3d">
             <div class="flex-impresion">
@@ -33,9 +41,9 @@
                 <img src="../img/impresion3D2.jpg" alt="">
             </div>
         </div>
-    </section>
-    </section>
-    <section class="Portafolio-Dg ">
+        </section>
+        </section>
+        <section class="Portafolio-Dg ">
         <h4>Diseño Grafico</h4>
         <article class="titulo-Dg">
             <h5>Logo</h5>
@@ -85,8 +93,8 @@
                 </div>
             </div>
         </article>
-    </section>
-    <section class="Portafolio-Foto">
+        </section>
+        <section class="Portafolio-Foto">
         <h4>Fotografia</h4>
         <div class="background-foto">
             <div class="grid-fotos">
@@ -99,18 +107,18 @@
                 <img src="../img/foto7.jpg" alt="">
             </div>
         </div>
-    </section>
-</main>
+        </section>
+    </main>
 
-<footer id="contacto">
+    <footer id="contacto">
     <div class="footer">
         <h5>
             Redes Sociales
         </h5>
         <ul class="footer-redes">
             <li>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
+                <a href="href=https://www.facebook.com/Krea-Studio-100532242013886" target="_BLANK">Facebook</a>
+                <a href="https://www.instagram.com/kreastudiomat/" target="_BLANK">Instagram</a>
                 <a href="sobreNostros.html">Whatsapp</a>
             </li>
         </ul>
@@ -118,6 +126,7 @@
             copyright Krea Studio
         </h6>
     </div>
-</footer>
+    </footer>
+<script src="../main.js"></script>
 </body>
 </html>

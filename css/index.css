@@ -19,56 +19,62 @@
 
 /**navbar**/
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 1.2em 1em 1.2em;
-    border-bottom: .3em solid var(--lightvoid);
-    font-weight: 700;
+#sidebar {
+    position: fixed;
+    width: 19em;
+    height: 100%;
+    background: #fff;
+    left: -20em;
+    transition: all 500ms ease-in;
+    z-index: 100;
+    border-right: 1px solid var(--lightvoid);
 }
 
-.nav img{
-    width: 15em;
-    height: 4.6em;
+#sidebar.active{
+    left: 0;
 }
 
-.nav__links-li{
+#sidebar>ul{
+    margin: 1.2em 0;
+}
+
+#sidebar ul li{
+    color: rgba(230, 230, 230, .9);
+    text-align: center;
+    padding: 1.3em .8em;
     list-style: none;
-
+    border-bottom:1px solid rgba(100, 100, 100, .3);
 }
 
-.nav__links-li a{
+li>.links{
     text-decoration: none;
-    margin: 1em 2em 0em 2em;
-    padding: .4em 1em;
-    border-radius: 5em;
-    color: var(--lightvoid);
-    font-size: 1.3em;
-    transition: 130ms all 130ms linear;
 }
 
-.nav__links-li a:first-child:hover{
-    color:#fff;
-    background: linear-gradient(to right, var(--red),var(--purple)80%);
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 14em;
+    height: 5.5em;
 }
 
-.nav__links-li a:nth-child(2):hover{
-    color:#fff;
-    background: var(--purple);
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 20.6em;
+    top: .65em;
+    cursor: pointer;
 }
 
-.nav__links-li a:nth-child(3):hover{
-    color:#fff;
-    background: var(--purple);
-}
-
-.nav__links-li a:nth-child(4):hover{
-    color:#fff;
-    background: linear-gradient(to right,var(--purple),var(--blue)80%);
+#sidebar .toggle-btn span{
+    display: block;
+    width: 1.5em;
+    text-align: center;
+    font-size: 2em;
+    border: 1px solid #bbb;
+    color: #ccc;
 }
 
 .button{
+    margin: 6em 5.4em;
     text-decoration: none;
     padding: .5em .9em;
     border-radius: 6em;
@@ -93,7 +99,7 @@
     justify-content: flex-end;
     text-align: center;
     width: 100%;
-    height: 36.9em;
+    height: 45em;
     color:#fff;
     padding: 2em 0em;
 }
@@ -129,6 +135,7 @@
     margin: 2em 0em;
     display:grid;
     grid-template-columns: repeat(2,1fr);
+    z-index: 1;
 }
 
 .section__article{
@@ -177,6 +184,7 @@
     background: url("../img/impresora3D1.jpg") no-repeat;
     background-size: 100% 130%;
     background-position: center left;
+    width: 100%;
     height: 44.4em;
     display: flex;
     text-align: left;
@@ -189,39 +197,15 @@
 .showcase h2{
     margin: 0em 0em 3em 0em;
     padding: 0em 2em 0em 2em;
-}
-
-.showcase p{
-    margin: 0em 0em 3em 0em;
-    padding: 0em 2em 0em 2em;
-}
-
-
-.showcase h2{
     font-size: 2em;
     font-weight: 900;
 }
 
 .showcase p{
+    margin: 0em 0em 3em 0em;
+    padding: 0em 2em 0em 2em;
     font-size: 1.3em;
     font-weight: 300;
-}
-
-/**articulos**/
-.section__Grid-div{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: 0em .8em;
-}
-
-.section__Grid-art{
-    background: var(--lightred);
-    margin: 1.8em .9em;
-    padding: 1.7em 1.8em;
-    border-radius: .6em;
-    box-shadow: 0em 1em 1em #ffe2fd;
-    color: #114;
-    text-align: center;
 }
 
 /**servicios**/
@@ -231,7 +215,7 @@
     background-size: 100% 54em;
     background-position: 100% 44%;
     width: 100%;
-    height: 20em;
+    height: 17em;
     color: #fff;
 }
 
@@ -275,6 +259,7 @@
     padding: 1.2em 1em;
     margin: 1.5em 1em;
     border-radius: .3em;
+    font-size: .8em;
 }
 
 /**footer**/
@@ -330,3 +315,78 @@ footer{
     background: #3eb66e;
 }
 
+/**responsive design**/
+
+@media only screen and (max-width:895px){
+    .servicios__cards{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:745px){
+    .section{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section__article{
+        margin: .5em 0;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .header{
+        height: 38.7em;
+    }
+
+    .header h1{
+        font-size: 1.8em;
+        margin: 0em 0em 3em;
+    }
+    
+    .header p{
+        font-size: .9em;
+        margin: 0;
+    }
+    
+    .section{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section__article{
+        margin: .5em 0;
+    }
+
+    .showcase{
+        background-size: 100% 130%;
+        background-position: 100% 100%;
+        height: 23em;
+    }
+
+    .showcase h2{
+        margin: 0em 1em;
+        padding: 0;
+        font-size: 1.4em;
+        font-weight: 900;
+    }
+    
+    .showcase p{
+        margin: 1em .8em;
+        padding: 0;
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .servicios-h2{
+        background-position: 100% 64%;
+        background-size: 200% 37em;
+        height: 12em;
+    }
+    
+    .servicios-h2 h2{
+        font-size: 1.5em;
+        width: 50%;
+        position: relative;
+        left: 45%;
+        bottom: -27%;
+    }
+}
