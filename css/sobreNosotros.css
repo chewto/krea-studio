@@ -166,3 +166,44 @@ footer{
     padding: .6em .6em;
     background: #3eb66e;
 }
+
+@media only screen and (max-width:375px){
+    .footer-redes li a{
+        margin: .5em .3em;
+    }
+    
+#sidebar {
+    width: 14em;
+    height: 100%;
+    background: #fff;
+    left: -14em;
+    
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar>ul{
+    margin: 1.2em 0;
+}
+
+#sidebar ul li{
+    padding: 1.3em .8em;
+}
+
+.logo{
+    margin: 0 auto;
+    width: 9em;
+    height: 3.5em;
+}
+
+#sidebar .toggle-btn{
+    left: 14.65em;
+    top: 0.65em;
+}
+
+.button{
+    margin: 6em 2.8em;
+}
+}
