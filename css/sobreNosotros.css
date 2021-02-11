@@ -121,6 +121,9 @@ footer{
     background: linear-gradient(to bottom,#103,#000);
     height: 12.5em;
     padding: 2.3em 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer{
