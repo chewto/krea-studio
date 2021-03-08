@@ -104,9 +104,10 @@ li>.links{
     padding: 2em 0em;
 }
 
-.header h1{
-    font-size: 2.4em;
-    margin: 0em 0em 3em;
+.header img{
+    width: 27.5em;
+    height: 9.5em;
+    margin: 0 0 1.5em 0;
 }
 
 .header p{
@@ -324,6 +325,11 @@ footer{
 }
 
 @media only screen and (max-width:745px){
+    .header img{
+        width: 22em;
+        height: 9em;
+    }
+    
     .section{
         grid-template-columns: repeat(1,1fr);
     }
@@ -338,9 +344,9 @@ footer{
         height: 38.7em;
     }
 
-    .header h1{
-        font-size: 1.8em;
-        margin: 0em 0em 3em;
+    .header img{
+        width: 15em;
+        height: 6em;
     }
     
     .header p{
